@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 25px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px #25204440;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+h1 {
+    color: #30254e;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #777;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    color: #6d5a91;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.flashcard {
+    min-height: 210px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f4f0ff;
+    border: 2px solid #e4dafc;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+#cardContent {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #34274e;
+    overflow-wrap: anywhere;
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 9px;
+    background: #ece8f5;
+    color: #42335e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    filter: brightness(0.95);
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.primary {
+    width: 100%;
+    background: #7050b5;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.navigation,
+.management,
+.formButtons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.navigation button,
+.management button,
+.formButtons button {
+    flex: 1;
+}
+
+#formSection {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+#formSection h2 {
+    font-size: 20px;
+    color: #30254e;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #42335e;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 75px;
+    resize: vertical;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+#saveBtn,
+#cancelBtn {
+    margin-top: 15px;
+}
+
+#message {
+    text-align: center;
+    min-height: 20px;
+    color: #60449b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 15px;
+    color: #888;
+    font-size: 13px;
+    border-top: 1px solid #eee;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    #cardContent {
+        font-size: 20px;
+    }
+
+    .navigation,
+    .management {
+        flex-wrap: wrap;
+    }
+
+    .navigation button,
+    .management button {
+        min-width: 40%;
+    }
+}

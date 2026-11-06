@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>📚 Flashcard Quiz</h1>
+            <p>Learn something new every day!</p>
+        </header>
+
+        <div class="progress">
+            <span id="cardCount">Card 1 of 5</span>
+            <span id="sideLabel">Question</span>
+        </div>
+
+        <section class="flashcard" id="flashcard">
+            <p id="cardContent">What is HTML?</p>
+        </section>
+
+        <button id="showAnswerBtn" class="primary">
+            Show Answer
+        </button>
+
+        <div class="navigation">
+            <button id="previousBtn">← Previous</button>
+            <button id="nextBtn">Next →</button>
+        </div>
+
+        <div class="management">
+            <button id="addBtn">+ Add Card</button>
+            <button id="editBtn">✏️ Edit</button>
+            <button id="deleteBtn">🗑 Delete</button>
+        </div>
+
+        <section id="formSection" hidden>
+            <h2 id="formTitle">Add Flashcard</h2>
+
+            <label for="questionInput">Question</label>
+            <textarea id="questionInput" placeholder="Enter question"></textarea>
+
+            <label for="answerInput">Answer</label>
+            <textarea id="answerInput" placeholder="Enter answer"></textarea>
+
+            <div class="formButtons">
+                <button id="saveBtn" class="primary">Save Card</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+        </section>
+
+        <p id="message" role="status"></p>
+
+        <footer>CodeAlpha Internship Project</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
